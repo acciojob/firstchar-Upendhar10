@@ -1,6 +1,11 @@
 function firstChar(text) {
   // your code here
-	return text.trim().chatAt(0);
+	for (let i = 0; i < text.length; i++) {
+    if (text[i] !== ' ') {
+      return text[i];
+    }
+  }
+  return '';
 }
 
 // Do not change the code below
